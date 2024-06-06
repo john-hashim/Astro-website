@@ -7,9 +7,5 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [react()],
   output: "server",
-  adapter: cloudflare({
-    platformProxy: {
-      enabled: true,
-    },
-  }),
+  adapter: cloudflare()
 });
